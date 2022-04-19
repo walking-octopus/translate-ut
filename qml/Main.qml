@@ -67,29 +67,35 @@ MainView {
             spacing: units.gu(2)
 
             // Todo: add the bottom pannel
-            TextArea {
-                id: input
-                placeholderText: "Hello!"
+            GridLayout {
+                columns: root.width > units.gu(70) ? 2 : 1
 
+                TextArea {
+                    id: input
+                    placeholderText: "Hello!"
+
+                    Layout.fillHeight: true
+                    Layout.fillWidth: true
+
+                    Layout.leftMargin: units.gu(2)
+                    Layout.rightMargin: units.gu(2)
+                    Layout.topMargin: units.gu(2)
+                }
+                // Todo: add the bottom pannel
+                TextArea {
+                    id: output
+                    placeholderText: "Bonjour!"
+                    readOnly: true
+
+                    Layout.fillHeight: true
+                    Layout.fillWidth: true
+
+                    Layout.leftMargin: units.gu(2)
+                    Layout.rightMargin: units.gu(2)
+                    Layout.topMargin: units.gu(2)
+                }
                 Layout.fillHeight: true
                 Layout.fillWidth: true
-
-                Layout.leftMargin: units.gu(2)
-                Layout.rightMargin: units.gu(2)
-                Layout.topMargin: units.gu(2)
-            }
-            // Todo: add the bottom pannel
-            TextArea {
-                id: output
-                placeholderText: "Bonjour!"
-                readOnly: true
-
-                Layout.fillHeight: true
-                Layout.fillWidth: true
-
-                Layout.leftMargin: units.gu(2)
-                Layout.rightMargin: units.gu(2)
-                Layout.topMargin: units.gu(2)
             }
 
             // Todo: remember selected language
@@ -170,6 +176,8 @@ MainView {
 
                     source_lang.model = language_names;
                     language_names.shift(); target_lang.model = language_names;
+
+                    target_lang.currentIndex = 26
                 })
             }
 
