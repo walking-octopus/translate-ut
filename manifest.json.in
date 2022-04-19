@@ -1,0 +1,15 @@
+{
+    "name": "translate.walking-octopus",
+    "description": "A translation app for Ubuntu Touch.",
+    "architecture": "@CLICK_ARCH@",
+    "title": "Translate",
+    "hooks": {
+        "translate": {
+            "apparmor": "translate.apparmor",
+            "desktop":  "translate.desktop"
+        }
+    },
+    "version": "1.0.0",
+    "maintainer": "walking-octopus <github.dphn6@aleeas.com>",
+    "framework" : "@CLICK_FRAMEWORK@"
+}
