@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: translate.walking-octopus\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-19 15:29+0000\n"
+"POT-Creation-Date: 2022-04-20 22:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,10 +17,10 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../qml/Main.qml:40 translate.desktop.in.h:1
+#: ../qml/Main.qml:41 translate.desktop.in.h:1
 msgid "Translate"
 msgstr ""
 
-#: ../qml/Main.qml:124
+#: ../qml/Main.qml:135
 msgid "Translate!"
 msgstr ""

@@ -21,6 +21,7 @@ import QtQuick.Layouts 1.3
 import Qt.labs.settings 1.0
 import QtQuick.Controls 2.12 as QQC
 import QtQuick.Controls.Suru 2.2
+import "./Components"
 
 MainView {
     id: root
@@ -66,7 +67,6 @@ MainView {
             }
             spacing: units.gu(2)
 
-            // Todo: add the bottom pannel
             GridLayout {
                 columns: root.width > units.gu(70) ? 2 : 1
 
@@ -104,10 +104,21 @@ MainView {
                     id: source_lang
                     Layout.fillWidth: true
                 }
-                // Todo: add a 'Switch languages' button'
-                //QQC.Button {
-                    //text: "-"
-                //}
+                QQC.Button {
+                    icon.name: "swap"
+                    Layout.preferredWidth: units.gu(5)
+
+                    enabled: source_lang.currentIndex - 1 != -1 ? true : false
+                    onClicked: {
+                        const old_source_lang = source_lang.currentIndex;
+                        source_lang.currentIndex = target_lang.currentIndex+1;
+                        target_lang.currentIndex = old_source_lang-1;
+
+                        const old_input = input.text;
+                        input.text = output.text;
+                        output.text = old_input;
+                    }
+                }
                 QQC.ComboBox {
                     id: target_lang
                     Layout.fillWidth: true
@@ -128,7 +139,7 @@ MainView {
                     input.text)
 
                 color: UbuntuColors.green
-                enabled: input.length == 0 ? false : true
+                enabled: input.length != 0 ? true : false
 
                 Layout.fillWidth: true
                 Layout.leftMargin: units.gu(2)
@@ -169,15 +180,17 @@ MainView {
             function get_languages() {
                 request(baseURL+"/languages").then(response => {
                     const data = JSON.parse(response);
-
                     languages = data.languages;
+
                     let language_names = []
                     languages.forEach(i => language_names.push(i.name))
+                    //for(var i = 1; i <= 10; i++) {language_names.push(i)}
 
                     source_lang.model = language_names;
                     language_names.shift(); target_lang.model = language_names;
 
-                    target_lang.currentIndex = 26
+                    //target_lang.currentIndex = 26
+
                 })
             }
 
