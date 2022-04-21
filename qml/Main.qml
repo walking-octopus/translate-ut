@@ -21,7 +21,7 @@ import QtQuick.Layouts 1.3
 import Qt.labs.settings 1.0
 import QtQuick.Controls 2.12 as QQC
 import QtQuick.Controls.Suru 2.2
-import "./Components"
+//import "./Components"
 
 MainView {
     id: root
@@ -32,6 +32,14 @@ MainView {
     width: units.gu(65)
     height: units.gu(70)
     anchorToKeyboard: true
+
+    Settings {
+        id: preferences
+
+        property int last_source_lang: 0
+        property int last_target_lang: 26
+        //property int commonMargin: units.gu(2)
+    }
 
     Page {
         anchors.fill: parent
@@ -103,6 +111,8 @@ MainView {
                 QQC.ComboBox {
                     id: source_lang
                     Layout.fillWidth: true
+
+                    onCurrentIndexChanged: preferences.last_source_lang = source_lang.currentIndex
                 }
                 QQC.Button {
                     icon.name: "swap"
@@ -110,21 +120,23 @@ MainView {
 
                     enabled: source_lang.currentIndex - 1 != -1 ? true : false
                     onClicked: {
-                        const old_source_lang = source_lang.currentIndex;
-                        source_lang.currentIndex = target_lang.currentIndex+1;
-                        target_lang.currentIndex = old_source_lang-1;
+                        const old_source_lang = source_lang.currentIndex
+                        source_lang.currentIndex = target_lang.currentIndex + 1
+                        target_lang.currentIndex = old_source_lang - 1
 
-                        const old_input = input.text;
-                        input.text = output.text;
-                        output.text = old_input;
+                        const old_input = input.text
+                        input.text = output.text
+                        output.text = old_input
                     }
                 }
                 QQC.ComboBox {
                     id: target_lang
                     Layout.fillWidth: true
+
+                    onCurrentIndexChanged: preferences.last_target_lang = target_lang.currentIndex
                 }
 
-                Component.onCompleted: lingva.get_languages()
+                Component.onCompleted: lingva.get_languages(preferences.last_source_lang, preferences.last_target_lang)
 
                 Layout.fillWidth: true
                 Layout.leftMargin: units.gu(2)
@@ -135,7 +147,7 @@ MainView {
                 text: i18n.tr('Translate!')
                 onClicked: lingva.translate(
                     lingva.language_name_to_code(source_lang.currentIndex),
-                    lingva.language_name_to_code(target_lang.currentIndex+1),
+                    lingva.language_name_to_code(target_lang.currentIndex + 1),
                     input.text)
 
                 color: UbuntuColors.green
@@ -155,12 +167,12 @@ MainView {
             property var languages
 
             function translate(source, target, query) {
-                const url = baseURL + "/%1/%2/%3".arg(source).arg(target).arg(query);
+                const url = baseURL + "/%1/%2/%3".arg(source).arg(target).arg(query)
 
                 request(url).then(response => {
-                    const data = JSON.parse(response);
+                    const data = JSON.parse(response)
 
-                    console.log(data.translation);
+                    //print(data.translation)
 
                     output.text = data.translation
                 })
@@ -168,29 +180,29 @@ MainView {
             }
 
             function get_audio(lang, query) {
-                const url = baseURL+"/audio/%1/%2".arg(lang).arg(query)
+                const url = baseURL + "/audio/%1/%2".arg(lang).arg(query)
 
                 request(url).then(response => {
-                    const data = JSON.parse(response);
+                    const data = JSON.parse(response)
 
                     print(data.audio)
                 })
             }
 
-            function get_languages() {
-                request(baseURL+"/languages").then(response => {
-                    const data = JSON.parse(response);
-                    languages = data.languages;
+            function get_languages(last_source_lang, last_target_lang) {
+                request(baseURL + "/languages").then(response => {
+                    const data = JSON.parse(response)
+                    languages = data.languages
 
                     let language_names = []
                     languages.forEach(i => language_names.push(i.name))
                     //for(var i = 1; i <= 10; i++) {language_names.push(i)}
 
-                    source_lang.model = language_names;
-                    language_names.shift(); target_lang.model = language_names;
+                    source_lang.model = language_names
+                    language_names.shift(); target_lang.model = language_names
 
-                    //target_lang.currentIndex = 26
-
+                    target_lang.currentIndex = last_target_lang
+                    source_lang.currentIndex = last_source_lang
                 })
             }
 
