@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: translate.walking-octopus\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-20 22:18+0000\n"
+"POT-Creation-Date: 2022-04-22 13:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,10 +17,72 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../qml/Main.qml:41 translate.desktop.in.h:1
+#: ../qml/Pages/About.qml:8
+msgid "About"
+msgstr ""
+
+#: ../qml/Pages/About.qml:32 ../qml/Pages/MainPage.qml:13
+#: translate.desktop.in.h:1
 msgid "Translate"
 msgstr ""
 
-#: ../qml/Main.qml:135
+#: ../qml/Pages/About.qml:50
+msgid "Version: "
+msgstr ""
+
+#: ../qml/Pages/About.qml:58
+msgid "A convergent translator app for Ubuntu Touch."
+msgstr ""
+
+#. TRANSLATORS: Please make sure the URLs are correct
+#: ../qml/Pages/About.qml:67
+msgid ""
+"This program is free software: you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation, either version 3 of the License, or (at your option) "
+"any later version. This program is distributed in the hope that it will be "
+"useful, but WITHOUT ANY WARRANTY; without even the implied warranty of "
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the <a "
+"href='https://www.gnu.org/licenses/gpl-3.0.en.html'>GNU General Public "
+"License</a> for more details."
+msgstr ""
+
+#: ../qml/Pages/About.qml:76
+msgid "ISSUES"
+msgstr ""
+
+#: ../qml/Pages/About.qml:76
+msgid "SOURCE"
+msgstr ""
+
+#: ../qml/Pages/About.qml:86
+msgid "Copyright"
+msgstr ""
+
+#: ../qml/Pages/About.qml:95
+msgid "Contributions: "
+msgstr ""
+
+#: ../qml/Pages/MainPage.qml:109
 msgid "Translate!"
+msgstr ""
+
+#: ../qml/Pages/Settings.qml:14
+msgid "Settings"
+msgstr ""
+
+#: ../qml/Pages/Settings.qml:18
+msgid "Cancel"
+msgstr ""
+
+#: ../qml/Pages/Settings.qml:27
+msgid "Apply"
+msgstr ""
+
+#: ../qml/Pages/Settings.qml:50
+msgid "Linva instance:"
+msgstr ""
+
+#: ../qml/Pages/Settings.qml:72
+msgid "Spacing:"
 msgstr ""
