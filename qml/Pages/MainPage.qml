@@ -129,6 +129,7 @@ Page {
         property var languages
 
         function translate(source, target, query) {
+            const url = baseURL + "/%1/%2/%3".arg(source).arg(target).arg(encodeURIComponent(query))
 
             request(url).then(response => {
                 const data = JSON.parse(response)
@@ -141,6 +142,7 @@ Page {
         }
 
         function get_audio(lang, query) {
+            const url = baseURL + "/audio/%1/%2".arg(lang).arg(encodeURIComponent(query))
 
             request(url).then(response => {
                 const data = JSON.parse(response)
