@@ -16,13 +16,13 @@ Page {
             actions: [
                 Action {
                     iconName: "settings"
-                    text: "Settings"
+                    text: i18n.tr("Settings")
                     // Todo: add settings
                     onTriggered: showSettings()
                 },
                 Action {
                     iconName: "info"
-                    text: "About"
+                    text: i18n.tr("About")
                     onTriggered: pStack.push(Qt.resolvedUrl("./About.qml"))
                 }]
         }
@@ -43,7 +43,7 @@ Page {
 
             TextArea {
                 id: input
-                placeholderText: "Hello!"
+                placeholderText: i18n.tr("Hello!")
 
                 Layout.fillHeight: true
                 Layout.fillWidth: true
