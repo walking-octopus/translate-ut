@@ -9,7 +9,7 @@
             "desktop":  "translate.desktop"
         }
     },
-    "version": "1.0.0",
+    "version": "1.0.1",
     "maintainer": "walking-octopus <github.dphn6@aleeas.com>",
     "framework" : "@CLICK_FRAMEWORK@"
 }
