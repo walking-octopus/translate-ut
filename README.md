@@ -1,14 +1,41 @@
 # Translate
+A translation app for Ubuntu Touch. 
 
-A translation app for Ubuntu Touch.
+<img src="https://open-store.io/screenshots/translate.walking-octopus-screenshot-6e864923-1162-4932-8562-97cbb8423303.png" alt="Screenshot" width="200" />
 
-## License
+[![OpenStore](https://open-store.io/badges/en_US.png)](https://open-store.io/app/translate.walking-octopus)
 
-Copyright (C) 2022  walking-octopus
+# Building 
 
-This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License version 3, as published
-by the Free Software Foundation.
+### Dependencies
+- Docker
+- Android tools (for adb)
+- Python3 / pip3
+- Clickable (get it from [here](https://clickable-ut.dev/en/latest/index.html))
 
-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranties of MERCHANTABILITY, SATISFACTORY QUALITY, or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+Use Clickable to build and package Translate as a Click package ready to be installed on Ubuntu Touch
 
-You should have received a copy of the GNU General Public License along with this program.  If not, see <http://www.gnu.org/licenses/>.
+### Build instructions
+Make sure you clone the project with
+`git clone https://github.com/walking-octopus/translate-ut.git`.
+
+To test the build on your workstation:
+```
+$  clickable desktop
+```
+
+To run on a device over SSH:
+```
+$  clickable --ssh [device IP address]
+```
+
+To build for a different architecture:
+```
+$  clickable -a [arch] build
+```
+where `arch` is one of: `amd64`, `arm64` or `armhf`.
+
+For more information on the several options see the Clickable [documentation](https://clickable-ut.dev/en/latest/index.html)
+
+# License
+The project is licensed under the [GPL-3.0](https://opensource.org/licenses/GPL-3.0).
