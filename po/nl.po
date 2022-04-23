@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the translate.walking-octopus package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: translate.walking-octopus\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-23 14:24+0000\n"
+"PO-Revision-Date: 2022-04-23 18:27+0200\n"
+"Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: ../qml/Pages/About.qml:8
+msgid "About"
+msgstr "Over"
+
+#: ../qml/Pages/About.qml:42 ../qml/Pages/MainPage.qml:13
+#: ../qml/Pages/MainPage.qml:30 translate.desktop.in.h:1
+msgid "Translate"
+msgstr "Vertalen"
+
+#: ../qml/Pages/About.qml:51
+msgid "Version: "
+msgstr "Versie: "
+
+#: ../qml/Pages/About.qml:59
+msgid "A convergent translator app for Ubuntu Touch."
+msgstr "Een responsieve vertaalapp voor Ubuntu Touch."
+
+#. TRANSLATORS: Please make sure the URLs are correct
+#: ../qml/Pages/About.qml:68
+msgid ""
+"This program is free software: you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation, either version 3 of the License, or (at your option) "
+"any later version. This program is distributed in the hope that it will be "
+"useful, but WITHOUT ANY WARRANTY; without even the implied warranty of "
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the <a "
+"href='https://www.gnu.org/licenses/gpl-3.0.en.html'>GNU General Public "
+"License</a> for more details."
+msgstr ""
+"Deze app wordt verspreidt onder de GPLv3-licentie (of hoger) in de hoop "
+"nuttig te zijn, maar wordt geleverd ZONDER ENIGE VORM VAN GARANTIE, zelfs "
+"zonder de garantie van VERKOOPBAARHEID of HET DIENEN VAN EEN BEPAALD DOEL. "
+"Bekijk voor meer informatie de voorwaarden van de <a href='https://www.gnu."
+"org/licenses/gpl-3.0.en.html'>GNU General Public License</a>."
+
+#: ../qml/Pages/About.qml:77
+msgid "ISSUES"
+msgstr "PROBLEMEN"
+
+#: ../qml/Pages/About.qml:77
+msgid "SOURCE"
+msgstr "BRONCODE"
+
+#: ../qml/Pages/About.qml:87
+msgid "Copyright"
+msgstr "Copyright"
+
+#: ../qml/Pages/About.qml:96
+msgid "Contributions: "
+msgstr "Bijdragers: "
+
+#: ../qml/Pages/MainPage.qml:109
+msgid "Translate!"
+msgstr "Vertalen!"
+
+#: ../qml/Pages/Settings.qml:14
+msgid "Settings"
+msgstr "Instellingen"
+
+#: ../qml/Pages/Settings.qml:18
+msgid "Cancel"
+msgstr "Annuleren"
+
+#: ../qml/Pages/Settings.qml:27
+msgid "Apply"
+msgstr "Toepassen"
+
+#: ../qml/Pages/Settings.qml:50
+msgid "Linva instance:"
+msgstr "Linva-instantie:"
+
+#: ../qml/Pages/Settings.qml:72
+msgid "Spacing:"
+msgstr "Uitlijning:"
