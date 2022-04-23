@@ -24,22 +24,23 @@ Page {
         Column {
             id: aboutColumn
             spacing: units.gu(2)
+            topPadding: units.gu(2)
             width: scrollView.width
-
-            Label {
-                anchors.horizontalCenter: parent.horizontalCenter
-                wrapMode: Text.WrapAtWordBoundaryOrAnywhere
-                text: i18n.tr("Translate")
-                fontSize: "x-large"
-            }
 
             UbuntuShape {
                 width: units.gu(12); height: units.gu(12)
                 anchors.horizontalCenter: parent.horizontalCenter
                 radius: "medium"
                 image: Image {
-                    source: Qt.resolvedUrl("../assets/logo.png")
+                    source: Qt.resolvedUrl("../../assets/logo.png")
                 }
+            }
+
+            Label {
+                anchors.horizontalCenter: parent.horizontalCenter
+                wrapMode: Text.WrapAtWordBoundaryOrAnywhere
+                text: i18n.tr("Translate")
+                fontSize: "x-large"
             }
 
             Label {

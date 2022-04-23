@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: translate.walking-octopus\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-22 13:32+0000\n"
+"POT-Creation-Date: 2022-04-23 14:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,21 +21,21 @@ msgstr ""
 msgid "About"
 msgstr ""
 
-#: ../qml/Pages/About.qml:32 ../qml/Pages/MainPage.qml:13
-#: translate.desktop.in.h:1
+#: ../qml/Pages/About.qml:42 ../qml/Pages/MainPage.qml:13
+#: ../qml/Pages/MainPage.qml:30 translate.desktop.in.h:1
 msgid "Translate"
 msgstr ""
 
-#: ../qml/Pages/About.qml:50
+#: ../qml/Pages/About.qml:51
 msgid "Version: "
 msgstr ""
 
-#: ../qml/Pages/About.qml:58
+#: ../qml/Pages/About.qml:59
 msgid "A convergent translator app for Ubuntu Touch."
 msgstr ""
 
 #. TRANSLATORS: Please make sure the URLs are correct
-#: ../qml/Pages/About.qml:67
+#: ../qml/Pages/About.qml:68
 msgid ""
 "This program is free software: you can redistribute it and/or modify it "
 "under the terms of the GNU General Public License as published by the Free "
@@ -47,19 +47,19 @@ msgid ""
 "License</a> for more details."
 msgstr ""
 
-#: ../qml/Pages/About.qml:76
+#: ../qml/Pages/About.qml:77
 msgid "ISSUES"
 msgstr ""
 
-#: ../qml/Pages/About.qml:76
+#: ../qml/Pages/About.qml:77
 msgid "SOURCE"
 msgstr ""
 
-#: ../qml/Pages/About.qml:86
+#: ../qml/Pages/About.qml:87
 msgid "Copyright"
 msgstr ""
 
-#: ../qml/Pages/About.qml:95
+#: ../qml/Pages/About.qml:96
 msgid "Contributions: "
 msgstr ""
 

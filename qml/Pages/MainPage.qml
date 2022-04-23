@@ -27,7 +27,7 @@ Page {
                 }]
         }
     }
-    title: "Translate"
+    title: i18n.tr("Translate")
 
     ColumnLayout {
         anchors {
@@ -129,7 +129,6 @@ Page {
         property var languages
 
         function translate(source, target, query) {
-            const url = baseURL + "/%1/%2/%3".arg(source).arg(target).arg(query)
 
             request(url).then(response => {
                 const data = JSON.parse(response)
@@ -142,7 +141,6 @@ Page {
         }
 
         function get_audio(lang, query) {
-            const url = baseURL + "/audio/%1/%2".arg(lang).arg(query)
 
             request(url).then(response => {
                 const data = JSON.parse(response)
