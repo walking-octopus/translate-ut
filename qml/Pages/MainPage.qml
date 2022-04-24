@@ -58,6 +58,13 @@ Page {
                 placeholderText: "Bonjour!"
                 readOnly: true
 
+                // A hack to allow copying text
+                onSelectedTextChanged: {
+                    if (selectedText.length > 0) {
+                        cursorVisible = true
+                    }
+                }
+
                 Layout.fillHeight: true
                 Layout.fillWidth: true
 
