@@ -40,6 +40,7 @@ MainView {
         property string baseURL: "https://lingva.ml/api/v1"
 
         property int commonMargin: 2
+        property int fontSize: 14
     }
 
     PageStack {
@@ -51,12 +52,14 @@ MainView {
     function showSettings() {
         var prop = {
             commonMargin: preferences.commonMargin,
+            fontSize: preferences.fontSize,
             baseURL: preferences.baseURL,
         }
 
         var slot_applyChanges = function(msettings) {
             console.log("Save changes...")
             preferences.commonMargin = msettings.commonMargin;
+            preferences.fontSize = msettings.fontSize;
             preferences.baseURL = msettings.baseURL;
         }
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: translate.walking-octopus\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-24 16:35+0000\n"
+"POT-Creation-Date: 2022-04-24 20:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -63,7 +63,7 @@ msgstr ""
 msgid "Contributions: "
 msgstr ""
 
-#: ../qml/Pages/MainPage.qml:19 ../qml/Pages/Settings.qml:14
+#: ../qml/Pages/MainPage.qml:19 ../qml/Pages/Settings.qml:15
 msgid "Settings"
 msgstr ""
 
@@ -71,22 +71,26 @@ msgstr ""
 msgid "Hello!"
 msgstr ""
 
-#: ../qml/Pages/MainPage.qml:116
+#: ../qml/Pages/MainPage.qml:118
 msgid "Translate!"
 msgstr ""
 
-#: ../qml/Pages/Settings.qml:18
+#: ../qml/Pages/Settings.qml:19
 msgid "Cancel"
 msgstr ""
 
-#: ../qml/Pages/Settings.qml:27
+#: ../qml/Pages/Settings.qml:28
 msgid "Apply"
 msgstr ""
 
-#: ../qml/Pages/Settings.qml:50
+#: ../qml/Pages/Settings.qml:51
 msgid "Linva instance:"
 msgstr ""
 
-#: ../qml/Pages/Settings.qml:72
+#: ../qml/Pages/Settings.qml:73
 msgid "Spacing:"
+msgstr ""
+
+#: ../qml/Pages/Settings.qml:100
+msgid "Font size:"
 msgstr ""

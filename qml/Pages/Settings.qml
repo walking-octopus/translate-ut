@@ -4,7 +4,8 @@ import Ubuntu.Components 1.3
 Page {
     id: settingPage
 
-    property alias commonMargin: intervalSlider.value
+    property alias commonMargin: marginSlider.value
+    property alias fontSize: fontSizeSlider.value
     property alias baseURL: dirPath.text
 
     signal applyChanges
@@ -66,9 +67,9 @@ Page {
             }
 
             ListItem {
-                height: intervalLabel.height + intervalSlider.height + column.mSpacing
+                height: marginLabel.height + marginSlider.height + column.mSpacing
                 Label {
-                    id:intervalLabel
+                    id:marginLabel
                     text: i18n.tr("Spacing:")
                     anchors {
                         top: parent.top; topMargin: column.mSpacing
@@ -77,14 +78,41 @@ Page {
                     }
                 }
                 Slider {
-                    id:intervalSlider
+                    id:marginSlider
                     function formatValue(v) { return v.toFixed(0); }
                     minimumValue: 0
                     maximumValue: 8
                     value: preferences.commonMargin
                     live: true
                     width: parent.width
-                    anchors.top: intervalLabel.bottom
+                    anchors.top: marginLabel.bottom
+                    anchors {
+                        left: parent.left; leftMargin: units.gu(1)
+                        right: parent.right; rightMargin: units.gu(1)
+                    }
+                }
+            }
+
+            ListItem {
+                height: fontSizeLabel.height + fontSizeSlider.height + column.mSpacing
+                Label {
+                    id:fontSizeLabel
+                    text: i18n.tr("Font size:")
+                    anchors {
+                        top: parent.top; topMargin: column.mSpacing
+                        left: parent.left; leftMargin: units.gu(1)
+                        right: parent.right; rightMargin: units.gu(1)
+                    }
+                }
+                Slider {
+                    id:fontSizeSlider
+                    function formatValue(v) { return v.toFixed(0); }
+                    minimumValue: 1
+                    maximumValue: 50
+                    value: preferences.commonMargin
+                    live: true
+                    width: parent.width
+                    anchors.top: fontSizeLabel.bottom
                     anchors {
                         left: parent.left; leftMargin: units.gu(1)
                         right: parent.right; rightMargin: units.gu(1)
