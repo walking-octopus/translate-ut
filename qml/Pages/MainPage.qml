@@ -44,7 +44,7 @@ Page {
             TextArea {
                 id: input
                 placeholderText: i18n.tr("Hello!")
-                font.pixelSize: preferences.fontSize
+                font.pixelSize: FontUtils.sizeToPixels("medium") * preferences.fontSize / 10
 
                 Layout.fillHeight: true
                 Layout.fillWidth: true
@@ -57,7 +57,7 @@ Page {
             TextArea {
                 id: output
                 placeholderText: "Bonjour!"
-                font.pixelSize: preferences.fontSize
+                font.pixelSize: FontUtils.sizeToPixels("medium") * preferences.fontSize / 10
                 readOnly: true
 
                 // A hack to allow copying text

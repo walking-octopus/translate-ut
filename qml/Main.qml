@@ -40,7 +40,7 @@ MainView {
         property string baseURL: "https://lingva.ml/api/v1"
 
         property int commonMargin: 2
-        property int fontSize: 14
+        property int fontSize: 10
     }
 
     PageStack {
