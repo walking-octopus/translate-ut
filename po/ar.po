@@ -1,0 +1,99 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the translate.walking-octopus package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: translate.walking-octopus\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-25 11:29+0000\n"
+"PO-Revision-Date: 2022-04-26 08:36+UTC+4\n"
+"Last-Translator: HEROBRINE7GAMER <tapermeerkat77@gmail.com>\n"
+"Language-Team: ARABIC <LL@li.org>\n"
+"Language: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../qml/Pages/About.qml:8 ../qml/Pages/MainPage.qml:25
+msgid "About"
+msgstr "عن"
+
+#: ../qml/Pages/About.qml:42 ../qml/Pages/MainPage.qml:13
+#: ../qml/Pages/MainPage.qml:30 translate.desktop.in.h:1
+msgid "Translate"
+msgstr "ترجم"
+
+#: ../qml/Pages/About.qml:51
+msgid "Version: "
+msgstr "النسخة:"
+
+#: ../qml/Pages/About.qml:59
+msgid "A convergent translator app for Ubuntu Touch."
+msgstr "تطبيق مترجم متقارب لأوبونتو توتش."
+
+#. TRANSLATORS: Please make sure the URLs are correct
+#: ../qml/Pages/About.qml:68
+msgid ""
+"This program is free software: you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation, either version 3 of the License, or (at your option) "
+"any later version. This program is distributed in the hope that it will be "
+"useful, but WITHOUT ANY WARRANTY; without even the implied warranty of "
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the <a "
+"href='https://www.gnu.org/licenses/gpl-3.0.en.html'>GNU General Public "
+"License</a> for more details."
+msgstr ""
+"هذا البرنامج برنامج حر: يمكن إعادة نشره و/أو تعديله تحت شروط رخصة جنو العامة المعلنة مثلما نشرت من قبل مؤسسة البرامج الحرة، إما النسخة 3 من الرخصة، أو (حسب خيارك) أي نسخة لاحقة. هذا البرنامج منشور أملا بأنه سيكون مفيدا، لكن بدون أي ضمان؛ حتى بدون ضمان ضمني للتسويق أو للمناسبة لهدف معين. انظر إلى <ahref='https://www.gnu.org/licenses/gpl-3.0.en.html'> للمزيد من التفاصيل."
+
+
+
+#: ../qml/Pages/About.qml:77
+msgid "ISSUES"
+msgstr "المشاكل"
+
+#: ../qml/Pages/About.qml:77
+msgid "SOURCE"
+msgstr "المصدر"
+
+#: ../qml/Pages/About.qml:87
+msgid "Copyright"
+msgstr "حقوق الطبع"
+
+#: ../qml/Pages/About.qml:96
+msgid "Contributions: "
+msgstr "المساهمات:"
+
+#: ../qml/Pages/MainPage.qml:19 ../qml/Pages/Settings.qml:15
+msgid "Settings"
+msgstr "الإعدادات"
+
+#: ../qml/Pages/MainPage.qml:46
+msgid "Hello!"
+msgstr "مرحبا!"
+
+#: ../qml/Pages/MainPage.qml:118
+msgid "Translate!"
+msgstr "ترجم!"
+
+#: ../qml/Pages/Settings.qml:19
+msgid "Cancel"
+msgstr "ألغ"
+
+#: ../qml/Pages/Settings.qml:28
+msgid "Apply"
+msgstr "طبق"
+
+#: ../qml/Pages/Settings.qml:51
+msgid "Linva instance:"
+msgstr "نموذج لينفا"
+
+#: ../qml/Pages/Settings.qml:73
+msgid "Spacing:"
+msgstr "التباعد"
+
+#: ../qml/Pages/Settings.qml:100
+msgid "Font size:"
+msgstr "حجم الخط:"
