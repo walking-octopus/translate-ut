@@ -9,6 +9,7 @@ We really appreciate all the work you put into it! :)
 | nl            | Dutch     | Heimen Stoffels (@Vistaus) |
 | ru            | Russian   | @walking-octopus           |
 | uk            | Ukrainian | @walking-octopus           |
+| ar            | Arabic    | @herobrine7gamer           |
 
 If your name or GitHub profile is missing here or if you want to make any other changes to this file, pull requests are welcome!
 
