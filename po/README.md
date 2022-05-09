@@ -10,6 +10,7 @@ We really appreciate all the work you put into it! :)
 | ru            | Russian   | @walking-octopus           |
 | uk            | Ukrainian | @walking-octopus           |
 | ar            | Arabic    | @herobrine7gamer           |
+| de            | German    | @Danfro                    |
 
 If your name or GitHub profile is missing here or if you want to make any other changes to this file, pull requests are welcome!
 
@@ -26,4 +27,4 @@ If you're a beginner, I highly recommend using [POEdit](https://github.com/vslav
 1. Download the editor
 2. Open the `.pot` file, which contains a list of all translatable strings. If you want to edit an existing localization, open the corresponding `.po` file.
 3. Start going through each string, translating them as you see fit. If you can't think of a good translation, you can find the correct term using [DeepL](https://www.deepl.com), [Google Translate](https://lingva.ml/), or in a glossary.
-4. Upload the new `.po` files. A commit message should be something like `Add German translation`, not `Upload nl.pot`. Don't forget to also add your name to the credits! :)
+4. Upload the new `.po` files. A commit message should be something like `Add German translation`, not `Upload de.pot`. Don't forget to also add your name to the credits! :)
