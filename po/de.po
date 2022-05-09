@@ -1,0 +1,106 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the translate.walking-octopus package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: translate.walking-octopus\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-25 11:29+0000\n"
+"PO-Revision-Date: 2022-05-08 22:39+0200\n"
+"Last-Translator: Daniel Frost <one@frostinfo.de>\n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: ../qml/Pages/About.qml:8 ../qml/Pages/MainPage.qml:25
+msgid "About"
+msgstr "Über"
+
+#: ../qml/Pages/About.qml:42 ../qml/Pages/MainPage.qml:13
+#: ../qml/Pages/MainPage.qml:30 translate.desktop.in.h:1
+msgid "Translate"
+msgstr "Translate"
+
+#: ../qml/Pages/About.qml:51
+msgid "Version: "
+msgstr "Version: "
+
+#: ../qml/Pages/About.qml:59
+msgid "A convergent translator app for Ubuntu Touch."
+msgstr "Eine konvergente Übersetzungsapp für Ubuntu Touch."
+
+#. TRANSLATORS: Please make sure the URLs are correct
+#: ../qml/Pages/About.qml:68
+msgid ""
+"This program is free software: you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation, either version 3 of the License, or (at your option) "
+"any later version. This program is distributed in the hope that it will be "
+"useful, but WITHOUT ANY WARRANTY; without even the implied warranty of "
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the <a "
+"href='https://www.gnu.org/licenses/gpl-3.0.en.html'>GNU General Public "
+"License</a> for more details."
+msgstr ""
+"Dieses Programm ist freie Software: du kannst sie verteilen und/oder "
+"verändern unter den Bedingungen der GNU General Public License so wie von "
+"der Free Software Foundation veröffentlicht, entweder in Version 3 der "
+"Lizenz, oder (nach deiner Entscheidung) einer neueren Version. Das "
+"Programm wird verteilt in der Hoffnung, dass es nützlich ist, aber OHNE "
+"JEDWEDE GARANTIE, ohne auch nur eine implizierte Garantie der "
+"VERKÄUFLICHKEIT oder DER GEEIGNETHEIT FÜR EINEN BESTIMMTEN ZWECK. Schaue "
+"hier <a href='https://www.gnu.org/licenses/gpl-3.0.en.html'>GNU General "
+"Public License</a> für weitere Details."
+
+#: ../qml/Pages/About.qml:77
+msgid "ISSUES"
+msgstr "FEHLER"
+
+#: ../qml/Pages/About.qml:77
+msgid "SOURCE"
+msgstr "QUELLCODE"
+
+#: ../qml/Pages/About.qml:87
+msgid "Copyright"
+msgstr "Copyright"
+
+#: ../qml/Pages/About.qml:96
+msgid "Contributions: "
+msgstr "Mitwirkende: "
+
+#: ../qml/Pages/MainPage.qml:19 ../qml/Pages/Settings.qml:15
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: ../qml/Pages/MainPage.qml:46
+msgid "Hello!"
+msgstr "Hallo!"
+
+#: ../qml/Pages/MainPage.qml:118
+msgid "Translate!"
+msgstr "Übersetzen!"
+
+#: ../qml/Pages/Settings.qml:19
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: ../qml/Pages/Settings.qml:28
+msgid "Apply"
+msgstr "Anwenden"
+
+#: ../qml/Pages/Settings.qml:51
+msgid "Linva instance:"
+msgstr "Linva Instanz:"
+
+#: ../qml/Pages/Settings.qml:73
+msgid "Spacing:"
+msgstr "Randabstand:"
+
+#: ../qml/Pages/Settings.qml:100
+msgid "Font size:"
+msgstr "Schriftgröße:"
