@@ -1,11 +1,11 @@
-<img height="128" src="https://open-store.io/screenshots/translate.walking-octopus-screenshot-e7563ac4-1345-49bb-bd34-1fd78667365e.png" align="left"/>
+<img height="128" src="https://open-store.io/icons/translate.walking-octopus/translate.walking-octopus-1.0.1.png" align="left"/>
 
 # Translate
 
 A native translation app for Ubuntu Touch.
 _____________________________________________
 
-<img src="https://open-store.io/screenshots/translate.walking-octopus-screenshot-6e864923-1162-4932-8562-97cbb8423303.png" alt="Screenshot" width="200" />
+<img src="https://open-store.io/screenshots/translate.walking-octopus-screenshot-e7563ac4-1345-49bb-bd34-1fd78667365e.png" alt="Screenshot" width="200" />
 
 [![OpenStore](https://open-store.io/badges/en_US.png)](https://open-store.io/app/translate.walking-octopus)
 
