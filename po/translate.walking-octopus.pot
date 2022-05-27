@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: translate.walking-octopus\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-27 17:58+0000\n"
+"POT-Creation-Date: 2022-05-27 18:07+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,8 +21,8 @@ msgstr ""
 msgid "About"
 msgstr ""
 
-#: ../qml/Pages/About.qml:59 ../qml/Pages/MainPage.qml:30
-#: ../qml/Pages/MainPage.qml:47 translate.desktop.in.h:1
+#: ../qml/Pages/About.qml:59 ../qml/Pages/MainPage.qml:31
+#: ../qml/Pages/MainPage.qml:48 translate.desktop.in.h:1
 msgid "Translate"
 msgstr ""
 
@@ -59,19 +59,15 @@ msgstr ""
 msgid "Copyright"
 msgstr ""
 
-#: ../qml/Pages/About.qml:113
-msgid "Contributions: "
-msgstr ""
-
-#: ../qml/Pages/MainPage.qml:36 ../qml/Pages/Settings.qml:32
+#: ../qml/Pages/MainPage.qml:37 ../qml/Pages/Settings.qml:32
 msgid "Settings"
 msgstr ""
 
-#: ../qml/Pages/MainPage.qml:63
+#: ../qml/Pages/MainPage.qml:64
 msgid "Hello!"
 msgstr ""
 
-#: ../qml/Pages/MainPage.qml:194
+#: ../qml/Pages/MainPage.qml:199
 msgid "Translate!"
 msgstr ""
 
