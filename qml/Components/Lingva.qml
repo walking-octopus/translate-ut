@@ -35,7 +35,8 @@ QtObject {
     }
 
     function get_audio(lang, query) {
-        const url = baseURL + "/audio/%1/%2".arg(lang).arg(encodeURIComponent(query))
+        const url = baseURL + "/audio/%1/%2".arg(encodeURIComponent(query)).arg(lang)
+        print(url)
 
         request(url).then(response => {
             const data = JSON.parse(response)

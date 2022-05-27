@@ -27,7 +27,7 @@ MainView {
     applicationName: 'translate.walking-octopus'
     automaticOrientation: true
 
-    width: units.gu(65)
+    width: units.gu(100)
     height: units.gu(70)
     anchorToKeyboard: true
 

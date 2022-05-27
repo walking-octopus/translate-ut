@@ -70,20 +70,22 @@ Page {
                 Layout.topMargin: units.gu(preferences.commonMargin)
 
                 // Play
-                Button {
-                    anchors {
-                        right: parent.right
-                        bottom: parent.bottom
-                        rightMargin: units.gu(2)
-                        bottomMargin: units.gu(2)
-                    }
+                // Button {
+                //     anchors {
+                //         right: parent.right
+                //         bottom: parent.bottom
+                //         rightMargin: units.gu(2)
+                //         bottomMargin: units.gu(2)
+                //     }
 
-                    iconName: "media-playback-start"
-                    onClicked: lingva.get_audio(input.text)
-                    width: units.gu(4)
-                    color: "transparent"
-                }
-
+                //     iconName: "media-playback-start"
+                //     onClicked: lingva.get_audio(
+                //         input.text,
+                //         lingva.language_name_to_code(source_lang.currentIndex)
+                //     )
+                //     width: units.gu(4)
+                //     color: "transparent"
+                // }
             }
 
             TextArea {
@@ -124,19 +126,22 @@ Page {
                     color: "transparent"
                 }
 
-                Button {
-                    anchors {
-                        right: parent.right
-                        bottom: parent.bottom
-                        rightMargin: units.gu(10)
-                        bottomMargin: units.gu(2)
-                    }
+                // Button {
+                //     anchors {
+                //         right: parent.right
+                //         bottom: parent.bottom
+                //         rightMargin: units.gu(10)
+                //         bottomMargin: units.gu(2)
+                //     }
                     
-                    iconName: "media-playback-start"
-                    onClicked: lingva.get_audio(output.text)
-                    width: units.gu(4)
-                    color: "transparent"
-                }
+                //     iconName: "media-playback-start"
+                //     onClicked: lingva.get_audio(
+                //         output.text,
+                //         lingva.language_name_to_code(target_lang.currentIndex + 1)
+                //     )
+                //     width: units.gu(4)
+                //     color: "transparent"
+                // }
 
                 // A hack to allow copying text
                 onSelectedTextChanged: {
@@ -198,8 +203,12 @@ Page {
         Button {
             text: i18n.tr("Translate!")
             onClicked: lingva.translate(
-                lingva.language_name_to_code(source_lang.currentIndex),
-                lingva.language_name_to_code(target_lang.currentIndex + 1),
+                lingva.language_name_to_code(
+                    source_lang.currentIndex
+                ),
+                lingva.language_name_to_code(
+                    target_lang.currentIndex + 1
+                ),
                 input.text
             )
 
@@ -211,7 +220,6 @@ Page {
             Layout.rightMargin: units.gu(preferences.commonMargin)
             Layout.bottomMargin: units.gu(preferences.commonMargin)
         }
-
     }
 
     Lingva {
