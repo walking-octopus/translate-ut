@@ -1,4 +1,4 @@
-<img height="128" src="https://open-store.io/icons/translate.walking-octopus/translate.walking-octopus-1.0.1.png" align="left"/>
+<img height="128" src="https://open-store.io/screenshots/translate.walking-octopus-screenshot-e7563ac4-1345-49bb-bd34-1fd78667365e.png" align="left"/>
 
 # Translate
 
