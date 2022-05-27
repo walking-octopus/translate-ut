@@ -19,7 +19,7 @@ import Ubuntu.Components 1.3
 //import QtQuick.Controls 2.2
 //import QtQuick.Layouts 1.3
 import Qt.labs.settings 1.0
-//import "./Components"
+import "./Components"
 
 MainView {
     id: root
@@ -49,6 +49,8 @@ MainView {
         Component.onCompleted: pStack.push(Qt.resolvedUrl("./Pages/MainPage.qml"))
     }
 
+    Toast { id: toast }
+
     function showSettings() {
         var prop = {
             commonMargin: preferences.commonMargin,
@@ -76,10 +78,10 @@ MainView {
                 if (xhr.status >= 200 && xhr.status < 300) {
                     resolve(xhr.response);
                 } else {
-                    reject(xhr.statusText);
+                    reject(xhr.status);
                 }
             };
-            xhr.onerror = () => reject(xhr.statusText);
+            xhr.onerror = () => reject(xhr.status);
             xhr.send();
         });
     }

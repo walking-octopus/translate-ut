@@ -28,7 +28,7 @@ Page {
 
     header: PageHeader {
         id: header
-        title: i18n.tr("Translate")
+        title: lingva.isLoading ? "..." : i18n.tr("Translate")
 
         trailingActionBar {
             actions: [
@@ -107,6 +107,9 @@ Page {
                     onClicked: {
                         output.text = "";
                         input.text = "";
+                        toast.show(
+                            i18n.tr("Cleared!")
+                        );
                     }
                     width: units.gu(4)
                     color: "transparent"
@@ -121,7 +124,12 @@ Page {
                     }
 
                     iconName: "edit-copy"
-                    onClicked: Clipboard.push(output.text)
+                    onClicked: {
+                        Clipboard.push(output.text);
+                        toast.show(
+                            i18n.tr("Copied!")
+                        );
+                    }
                     width: units.gu(4)
                     color: "transparent"
                 }

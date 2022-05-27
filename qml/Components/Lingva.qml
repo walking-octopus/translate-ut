@@ -18,53 +18,64 @@ import QtQuick 2.7
 
 QtObject {
     id: lingva
-    property string baseURL
+    property string baseURL: preferences.baseURL
     property var languages
+    property bool isLoading: false
 
     function translate(source, target, query) {
-        const url = baseURL + "/%1/%2/%3".arg(source).arg(target).arg(encodeURIComponent(query))
+        const url = baseURL + "/%1/%2/%3".arg(source).arg(target).arg(encodeURIComponent(query));
 
+        isLoading = true;
         request(url).then(response => {
-            const data = JSON.parse(response)
+            const data = JSON.parse(response);
 
-            //print(data.translation)
+            //print(data.translation);
 
-            output.text = data.translation
+            output.text = data.translation;
+            isLoading = false;
         })
-        .catch(error => console.error(error))
+        .catch((error) => {
+            console.error(`Error: ${error}`);
+            toast.show(
+                i18n.tr("Error: ") + error
+            );
+            isLoading = false;
+        });
     }
 
     function get_audio(lang, query) {
-        const url = baseURL + "/audio/%1/%2".arg(encodeURIComponent(query)).arg(lang)
-        print(url)
+        const url = baseURL + "/audio/%1/%2".arg(encodeURIComponent(query)).arg(lang);
 
+        isLoading = true;
         request(url).then(response => {
-            const data = JSON.parse(response)
+            const data = JSON.parse(response);
 
-            print(data.audio)
+            print(data.audio);
+            isLoading = false;
         })
     }
 
     function get_languages(last_source_lang, last_target_lang) {
+        isLoading = true;
         request(baseURL + "/languages").then(response => {
-            const data = JSON.parse(response)
-            languages = data.languages
+            const data = JSON.parse(response);
+            languages = data.languages;
 
-            let language_names = []
-            languages.forEach(i => language_names.push(i.name))
+            let language_names = [];
+            languages.forEach(i => language_names.push(i.name));
             //for(var i = 1; i <= 10; i++) {language_names.push(i)}
 
-            source_lang.model = language_names
-            language_names.shift(); target_lang.model = language_names
+            source_lang.model = language_names;
+            language_names.shift(); target_lang.model = language_names;
 
-            target_lang.currentIndex = last_target_lang
-            source_lang.currentIndex = last_source_lang
-        })
+            target_lang.currentIndex = last_target_lang;
+            source_lang.currentIndex = last_source_lang;
+
+            isLoading = false;
+        });
     }
 
     function language_name_to_code(i) {
-        return languages[i].code
+        return languages[i].code;
     }
-
-    Component.onCompleted: lingva.baseURL = preferences.baseURL
 }
