@@ -63,6 +63,21 @@ Page {
                 placeholderText: i18n.tr("Hello!")
                 font.pixelSize: FontUtils.sizeToPixels("medium") * preferences.fontSize / 10
 
+                // Play
+                Button {
+                    anchors {
+                        right: parent.right
+                        bottom: parent.bottom
+                        rightMargin: units.gu(2)
+                        bottomMargin: units.gu(2)
+                    }
+
+                    iconName: "media-playback-start"
+                    width: units.gu(4)
+                    color: "transparent"
+                    onClicked: lingva.get_audio(input.text)
+                }
+
                 Layout.fillHeight: true
                 Layout.fillWidth: true
 
@@ -76,6 +91,50 @@ Page {
                 placeholderText: "Bonjour!"
                 font.pixelSize: FontUtils.sizeToPixels("medium") * preferences.fontSize / 10
                 readOnly: true
+
+                // Clear, Copy, Play
+                Button {
+                    anchors {
+                        right: parent.right
+                        bottom: parent.bottom
+                        rightMargin: units.gu(2)
+                        bottomMargin: units.gu(2)
+                    }
+
+                    iconName: "edit-clear"
+                    width: units.gu(4)
+                    color: "transparent"
+                    onClicked: {
+                        output.text = "";
+                        input.text = "";
+                    }
+                }
+                Button {
+                    anchors {
+                        right: parent.right
+                        bottom: parent.bottom
+                        rightMargin: units.gu(6)
+                        bottomMargin: units.gu(2)
+                    }
+
+                    iconName: "edit-copy"
+                    width: units.gu(4)
+                    color: "transparent"
+                    onClicked: Clipboard.push(output.text)
+                }
+                Button {
+                    anchors {
+                        right: parent.right
+                        bottom: parent.bottom
+                        rightMargin: units.gu(10)
+                        bottomMargin: units.gu(2)
+                    }
+                    
+                    iconName: "media-playback-start"
+                    width: units.gu(4)
+                    color: "transparent"
+                    onClicked: lingva.get_audio(output.text)
+                }
 
                 // A hack to allow copying text
                 onSelectedTextChanged: {
@@ -136,7 +195,8 @@ Page {
             onClicked: lingva.translate(
                 lingva.language_name_to_code(source_lang.currentIndex),
                 lingva.language_name_to_code(target_lang.currentIndex + 1),
-                input.text)
+                input.text
+            )
 
             color: UbuntuColors.green
             enabled: input.length != 0 ? true : false

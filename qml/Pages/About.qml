@@ -103,15 +103,6 @@ Page {
                 style: Font.Bold
                 text: i18n.tr("Copyright") + " (c) 2022  walking-octopus <github.dphn6@aleeas.com>"
             }
-
-            Label {
-                width: parent.width
-                linkColor: UbuntuColors.orange
-                horizontalAlignment: Text.AlignHCenter
-                wrapMode: Text.WrapAtWordBoundaryOrAnywhere
-                style: Font.Bold
-                text: i18n.tr("Contributions: ") + "walking-octopus"
-           }
         }
     }
 }
