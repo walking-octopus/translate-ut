@@ -14,7 +14,7 @@ msgstr ""
 "Language-Team: ARABIC <LL@li.org>\n"
 "Language: Arabic\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../qml/Pages/About.qml:8 ../qml/Pages/MainPage.qml:25
