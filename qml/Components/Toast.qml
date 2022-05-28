@@ -20,7 +20,7 @@ import Ubuntu.Components 1.3
 
 UbuntuShape {
 
-    property var defaultTime: 8000
+    property var defaultTime: 3500
     property bool stateVisible: false
 
     id: toast
@@ -30,7 +30,7 @@ UbuntuShape {
     anchors.horizontalCenter: parent.horizontalCenter
     width: label.width + units.gu(2)
     height: label.height + units.gu(2)
-    backgroundColor: "Ubuntu.Components.Themes.Ambiance" ? "white" : "#202020"
+    backgroundColor: "Ubuntu.Components.Themes.Ambiance" ? "#202020": "white"
     aspect: UbuntuShape.DropShadow
     radius: "large"
     visible: false
