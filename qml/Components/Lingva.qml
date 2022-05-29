@@ -23,13 +23,11 @@ QtObject {
     property bool isLoading: false
 
     function translate(source, target, query) {
-        const url = baseURL + "/%1/%2/%3".arg(source).arg(target).arg(encodeURIComponent(query));
+        const url = `${baseURL}/${source}/${target}/${encodeURIComponent(query)}`;
 
         isLoading = true;
         request(url).then(response => {
             const data = JSON.parse(response);
-
-            //print(data.translation);
 
             output.text = data.translation;
             isLoading = false;
@@ -44,7 +42,7 @@ QtObject {
     }
 
     function get_audio(lang, query) {
-        const url = baseURL + "/audio/%1/%2".arg(encodeURIComponent(query)).arg(lang);
+        const url = `${baseURL}/audio/${encodeURIComponent(query)}/${lang}`;
 
         isLoading = true;
         request(url).then(response => {
@@ -63,7 +61,6 @@ QtObject {
 
             let language_names = [];
             languages.forEach(i => language_names.push(i.name));
-            //for(var i = 1; i <= 10; i++) {language_names.push(i)}
 
             source_lang.model = language_names;
             language_names.shift(); target_lang.model = language_names;
