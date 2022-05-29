@@ -30,7 +30,7 @@ UbuntuShape {
     anchors.horizontalCenter: parent.horizontalCenter
     width: label.width + units.gu(2)
     height: label.height + units.gu(2)
-    backgroundColor: "Ubuntu.Components.Themes.Ambiance" ? "#202020": "white"
+    backgroundColor: (Theme.name == "Ubuntu.Components.Themes.Ambiance") ? "white" : "#202020"
     aspect: UbuntuShape.DropShadow
     radius: "large"
     visible: false
