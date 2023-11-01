@@ -1,5 +1,5 @@
 import QtQuick 2.7
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 import "../Components"
 
 Page {
@@ -31,7 +31,7 @@ Page {
             anchors.topMargin: units.gu(1)
             spacing: units.gu(2)
 
-            UbuntuShape {
+            LomiriShape {
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.bottomMargin: units.gu(2)
                 width: units.gu(16); height: width
@@ -65,7 +65,7 @@ Page {
                 text: Qt.application.version
                 color: "white"
 
-                UbuntuShape {
+                LomiriShape {
                     anchors {
                         fill: parent
                         leftMargin: units.gu(-0.6)
@@ -75,7 +75,7 @@ Page {
                     }
                     z: -1
                     
-                    color: UbuntuColors.blue
+                    color: LomiriColors.blue
                     radius: "large"
                 }
             }
