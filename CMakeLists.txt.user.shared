@@ -166,7 +166,7 @@
          <value type="QString">LD_LIBRARY_PATH=/home/stas/translate/lib/all:/home/stas/translate/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/home/stas/translate/build/all/app/install/lib</value>
          <value type="QString">QML2_IMPORT_PATH=/home/stas/translate/lib/all:/home/stas/translate/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/home/stas/translate/build/all/app/install/qml:/home/stas/translate/build/all/app/install/lib</value>
          <value type="QString">PATH=/home/stas/translate/build/all/app/install:/home/stas/translate:/usr/local/nvidia/bin:/bin:/usr/bin:/home/stas/translate/build/all/app/install</value>
-         <value type="QString">QT_QPA_PLATFORMTHEME=ubuntuappmenu</value>
+         <value type="QString">QT_QPA_PLATFORMTHEME=lomiriappmenu</value>
     </valuelist>
     <value type="QString" key="ProjectExplorer.CustomExecutableRunConfiguration.Arguments">qml/Main.qml</value>
     <value type="QString" key="ProjectExplorer.CustomExecutableRunConfiguration.Executable">qmlscene</value>
@@ -229,7 +229,7 @@
          <value type="QString">LD_LIBRARY_PATH=/home/stas/translate/lib/all:/home/stas/translate/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/home/stas/translate/build/all/app/install/lib</value>
          <value type="QString">QML2_IMPORT_PATH=/home/stas/translate/lib/all:/home/stas/translate/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/home/stas/translate/build/all/app/install/qml:/home/stas/translate/build/all/app/install/lib</value>
          <value type="QString">PATH=/home/stas/translate/build/all/app/install:/home/stas/translate:/usr/local/nvidia/bin:/bin:/usr/bin:/home/stas/translate/build/all/app/install</value>
-         <value type="QString">QT_QPA_PLATFORMTHEME=ubuntuappmenu</value>
+         <value type="QString">QT_QPA_PLATFORMTHEME=lomiriappmenu</value>
     </valuelist>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Run qmlscene</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Run qmlscene</value>

@@ -15,9 +15,9 @@
  */
 
 import QtQuick 2.7
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 
-UbuntuShape {
+LomiriShape {
     property string headerText
     property string contentText
     property string url
@@ -30,7 +30,7 @@ UbuntuShape {
     }
 
     radius: "small"
-    color: theme.name == "Ubuntu.Components.Themes.Ambiance" ? "#F7F7F7" : "#3B3B3B"
+    color: theme.name == "Lomiri.Components.Themes.Ambiance" ? "#F7F7F7" : "#3B3B3B"
     height: (!!headerText ? headerLabel.contentHeight : 0) + contentLabel.contentHeight + (units.gu(2) * 2.5)
 
     Label {

@@ -16,7 +16,7 @@
 
 
 import QtQuick 2.9
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 //import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.3
 import QtQuick.Controls 2.12 as QQC
@@ -63,7 +63,7 @@ Page {
                 id: input
                 placeholderText: i18n.tr("Hello!")
                 font.pixelSize: FontUtils.sizeToPixels("medium") * preferences.fontSize / 10
-                
+
                 Layout.fillHeight: true; Layout.fillWidth: true
                 Layout.leftMargin: units.gu(preferences.commonMargin)
                 Layout.rightMargin: units.gu(preferences.commonMargin)
@@ -141,7 +141,7 @@ Page {
                 //         rightMargin: units.gu(10)
                 //         bottomMargin: units.gu(2)
                 //     }
-                    
+
                 //     iconName: "media-playback-start"
                 //     onClicked: lingva.get_audio(
                 //         output.text,
@@ -220,7 +220,7 @@ Page {
                 input.text
             )
 
-            color: UbuntuColors.green
+            color: LomiriColors.green
             enabled: input.length != 0 ? true : false
 
             Layout.fillWidth: true

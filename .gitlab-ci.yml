@@ -6,9 +6,9 @@
   # `stage`
   stage_build: &stage_build 'build'
   # `image`
-  image_clickable_amd64: &image_clickable_amd64 'clickable/ci-16.04-amd64'
-  image_clickable_arm64: &image_clickable_arm64 'clickable/ci-16.04-arm64'
-  image_clickable_armhf: &image_clickable_armhf 'clickable/ci-16.04-armhf'
+  image_clickable_amd64: &image_clickable_amd64 'clickable/ci-20.04-amd64'
+  image_clickable_arm64: &image_clickable_arm64 'clickable/ci-20.04-arm64'
+  image_clickable_armhf: &image_clickable_armhf 'clickable/ci-20.04-armhf'
   # `artifacts.paths`
   paths_amd64: &paths_amd64
     - 'build/x86_64-linux-gnu/app/*.click'
